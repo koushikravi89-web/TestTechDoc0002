@@ -1,0 +1,64 @@
+site_name: XELERATE
+
+docs_dir: docs
+
+nav:
+  - Introduction: index.md
+
+  - Catalog Overview: catalog.md
+
+  - Publishing Overview: overview.md
+  - Catalog Entities: entities.md
+
+  - "Publishing: Entities":
+    - Entity Publishing: entity-publishing.md
+    - Entity Examples: entity-examples.md
+    - API Entities: api.md
+    - Advance Catalog Use: catalog-advanced.md
+
+
+  - "Publishing: Guides & Docs":
+    - TechDocs Publishing: guide-publishing.md
+    - Sample Docs Repo: sample-docs-repo.md
+    - Install TechDocs Locally: techdocs-local.md
+    - Publishing Markdown from GitHub.com: publish-via-github.md
+    - Publishing Markdown from Azure ADO: publish-via-ado.md
+    - Advanced Markdown:
+      - Markdown Tips and Techniques: markdown-tips.md
+      - Extensions for Markdown: native-extensions.md
+      - "Extensions: Usage Examples": mkdocs-examples.md
+      - Add-on Extensions & Examples: addon-extensions.md
+
+  - "Publishing: Release Notes":
+    - Release Note Publishing: release-notes.md
+    - Content Extraction & JSON Creation: rn-02.md
+    - Publishing Release Notes to Backstage: rn-03.md
+    - Publishing Release Notes to Backstage via ZIP: rn-05.md
+    - Release Notes FAQs: rn-04.md
+
+  - "Enable Software Templates":
+    - Overview: est-01.md
+    - Adding your own Templates: est-02.md
+
+  - "Managing Access & Permissions":
+    - Basics of Compliance and Permissions: access_management_basics.md
+    - How to Specify Access to Your Assets: access_options.md
+
+  - FAQ & DXP Front-end:
+    - FAQs: faq.md
+    # This has been taken down, because we no more using blueline hence Johann ask to take this down on 21 Jun 2024
+    # - DXP Front-end:
+    #   - "DXP FE: Entity Labels": entity-labels.md
+    #   - "DXP FE: Intro & Ownership page": intro-page.md
+
+plugins:
+  - techdocs-core
+
+markdown_extensions:
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.highlight:
+      linenums: none
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_index: !!python/name:pymdownx.emoji.emojione
